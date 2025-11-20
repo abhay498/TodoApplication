@@ -1,0 +1,17 @@
+<div class="todo-container">
+  <!-- Header -->
+  <div class="header">
+    <h1> Todo Application </h1>
+  </div>
+
+  <!-- Input + button -->
+  <div class="input-container">
+    <input [(ngModel)]="item" placeholder="Enter todo">
+    <button (click)="add()">Add</button>
+  </div>
+
+  <!-- Todo list -->
+  <ul>
+    <li *ngFor="let t of list">{{ t }}</li>
+  </ul>
+</div>
